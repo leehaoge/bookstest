@@ -1,0 +1,11 @@
+{
+  "name": "bookserver",
+  "version": "1.0.0",
+  "description": "bookstest server",
+  "main": "index.js",
+  "scripts": {
+    "test": "bookstest"
+  },
+  "author": "Lanny Lee <lanny.lee@foxmail.com>",
+  "license": "ISC"
+}
