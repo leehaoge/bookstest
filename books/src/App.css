@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 95px;
   padding: 20px;
   color: white;
 }
@@ -25,4 +25,93 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.book-list {
+  display: inline-block;
+  padding: 3px 6px;
+  text-align: justify;
+}
+
+.book-list-item {
+  margin: 20px 34px 0px 0px;
+  padding: 8px 8px;
+  width: 270px;
+  height: 430px;
+  display: inline-block;
+  box-shadow: 1px 1px 4px #eee;
+  cursor: pointer;
+}
+
+.book-list-item-content {
+  text-shadow: none;
+  text-align: center;
+}
+
+.book-list-item-content img {
+  width: 260px;
+  height: 395px;
+}
+
+.book-list-title {
+  overflow: hidden;
+  word-break:keep-all;  
+  white-space:nowrap; 
+  text-align: center;
+}
+
+#book-list {
+  padding: 8px 24px;
+}
+
+.page-nav {
+  display: table;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.nav-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.search-bar {
+  height: 24;
+}
+
+.search-bar input {
+  vertical-align: top;
+  height: 24px;
+  width: 250px;
+}
+
+.search-bar img {
+  vertical-align: top;
+  margin: 1px 1px;
+  height: 28px;
+}
+
+.curr-page {
+  font-weight: bolder;
+}
+
+.book-detail-pane {
+  text-shadow: none;
+}
+
+.book-detail-image {
+  float: left;
+  width: 400px;
+}
+
+.book-detail-data {
+  padding: 5px 4px 4px 12px;
+  margin-left: 402px;
+  text-align: left;
+}
+
+.text-left {
+  text-align: left;
 }
