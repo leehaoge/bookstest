@@ -5,6 +5,9 @@ import $ from 'jquery';
 import './App.css';
 
 const pageSize = 10;
+const hostIp = '192.168.1.138';
+const hostPort = '4000';
+const apiServer = 'http://' + hostIp + ':' + hostPort;
 var currPage = 1, pageData, theApp, keyword;
 
 function setPageData(data) {
@@ -200,7 +203,7 @@ class Booksearch extends Component {
   search() {
     if (!this.state || !this.state.value) this.state = {value: ''};
     $.ajax({
-      url: 'http://localhost:4000/search',
+      url: apiServer + '/search',
       data: { keyword: this.state.value},
       type: 'post',
       dataType: 'json',
@@ -235,7 +238,7 @@ class App extends Component {
     var data = { page: currPage, pageSize: pageSize };
     if (keyword && keyword.length > 0) data.keyword = keyword;
     $.ajax({
-      url: 'http://localhost:4000/page',
+      url: apiServer + '/page',
       data: data,
       type: 'post',
       dataType: 'json',
