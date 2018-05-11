@@ -5,7 +5,7 @@ import $ from 'jquery';
 import './App.css';
 
 const pageSize = 10;
-const hostIp = '192.168.1.138';
+const hostIp = 'localhost';
 const hostPort = '4000';
 const apiServer = 'http://' + hostIp + ':' + hostPort;
 var currPage = 1, pageData, theApp, keyword;
